@@ -6,11 +6,11 @@ public class Track {
 	private String album;
 	private int length;
 	
-	public Track(String string, String string2, String string3, int i) {
-		title = string;
-		artist = string2;
-		album = string3;
-		length = i;
+	public Track(String title_par, String artist_par, String album_par, int length_par) {
+		title = title_par;
+		artist = artist_par;
+		album = album_par;
+		length = length_par;
 	}
 	/***
 	 * Get human-readable track length
@@ -18,5 +18,14 @@ public class Track {
 	 */
 	public String getLengthForHumans() {
 		return length/60+":"+ ((""+length%60).length()==1 ? "0"+length%60 : length%60);
+	}
+	public String getTitle() {
+		return title;
+	}
+	public String getAlbum() {
+		return album;
+	}
+	public String getArtist() {
+		return artist;
 	}
 }
