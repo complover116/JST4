@@ -6,8 +6,8 @@ public class Versioner {
 	@SuppressWarnings("unused")
 	public static void printVersion() {
 		if(Versioner.BUILD_NUMBER != -1)
-			Logger.getInstance().log(Logger.LogType.SYSTEM, "Running build "+Versioner.BUILD_NUMBER);
+			System.out.println("Running build "+Versioner.BUILD_NUMBER);
 			else
-			Logger.getInstance().log(Logger.LogType.SYSTEM, "Running a development build");
+			System.out.println("Running a development build");
 	}
 }
