@@ -2,7 +2,7 @@ package com.complover116.jst4;
 
 public class Logger {
 	enum LogType{
-		SYSTEM, LOGTYPECOUNT;
+		SYSTEM, DATABASE, LOGTYPECOUNT;
 	}
 	
 	

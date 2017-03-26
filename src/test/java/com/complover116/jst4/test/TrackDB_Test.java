@@ -13,10 +13,10 @@ public class TrackDB_Test {
 	@Test
 	public void testSearch() {
 		TrackDB testDB = new TrackDB();
-		testDB.addTrack(new Track("A test song", "complover116", "JST4 test album", 425));
-		testDB.addTrack(new Track("A test song 2", "complover116", "JST4 test album", 425));
-		testDB.addTrack(new Track("Continious integration", "complover116", "JST4 test album", 425));
-		testDB.addTrack(new Track("This is a little bunny", "complover116", "Fake album 3", 425));
+		testDB.addTrack(new Track("A test song", "complover116", "JST4 test album", 425, null));
+		testDB.addTrack(new Track("A test song 2", "complover116", "JST4 test album", 425, null));
+		testDB.addTrack(new Track("Continious integration", "complover116", "JST4 test album", 425, null));
+		testDB.addTrack(new Track("This is a little bunny", "complover116", "Fake album 3", 425, null));
 		ArrayList<Track> tracks = testDB.search("omplo", false);
 		assertEquals("You should be able to search by artist", tracks.size(), 4);
 		tracks = testDB.search("omplo", true);
